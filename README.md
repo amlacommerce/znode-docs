@@ -79,3 +79,4 @@ With Znode's dependencies installed and NuGet configured, it is now time to run 
 1. Configure SQL connection strings in the API's [Web.config](https://github.com/amlacommerce/znode-source/blob/master/Projects/Znode.Engine.Api/Web.config). The `ZnodeECommerceDB` and `Znode_Entities` strings need to be configured. For both settings, set:
     1. `Data Source`, `User Id`, and `Password` to that which is used to connect with SSMS (or as desired).
     1. `Initial Catalog` to the name of the Znode DB. The default is `Znode_Multifront_911`.
+1. Run the solution. Visual Studio should automatically open the 3 applications in the default browser.
