@@ -1,9 +1,9 @@
 # Znode Developer Documentation
 This is the home to documentation for developing with Znode. Documentation is broken into the following sections:
-- Section 1: Install Dependencies
-- Section 2: Create Znode Database
-- Section 3: Configure NuGet
-- Section 4: Configure, Build and Run Znode
+- Section 1: Installing Dependencies
+- Section 2: Creating a Znode Database
+- Section 3: Configuring NuGet
+- Section 4: Configuring, Building and Running Znode
 
 ## Section 1: Installing Dependencies
 Znode depends on the following software to properly run:
