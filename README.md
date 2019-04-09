@@ -46,7 +46,7 @@ Follow these steps to install Elasticsearch. Znode officially supports Elasticse
 Follow these steps to install MongoDB. Znode officially supports MongoDB v3.2, but other versions may also work.
 1. Acquire a copy of MongoDB v3.2. A copy is provided in the [Setup Files ZIP](https://drive.google.com/file/d/1pecVTQUzrEFd_U04lL823-RWvBgmisss/view?usp=sharing) (`Mongodb-win32-x86_64-2008plus-ssl-v3.2-latest-signed`).
 1. Run the MongoDB installer. Accept the default selections during installation.
-1. Once the installation is done, create a folder on the `C:` drive named `MongodbDataFiles`, or name differently if desired.
+1. Once the installation is done, create a folder on the `C:` drive named `MongodbDataFiles`, or locate/name differently if desired.
 1. In the `MongodbDataFiles` folder add one file named `logs.txt`.
 1. Open a command prompt as an administrator and run the following commands, updating paths if necessary:
     1. C:\\>`cd "C:\Program Files\MongoDB\Server\3.2\bin"`
