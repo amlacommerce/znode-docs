@@ -17,8 +17,8 @@ Touch points are the most important part of the ERP Connector. As mentioned, tou
 Touch points are most commonly used for:
 
 * Integrating with external systems
-  * Ex: Exporting data from external systems
-  * Ex: Importing data from extrenal systems
+  * Ex: Exporting data to external systems
+  * Ex: Importing data from external systems
 * Performing maintenance tasks
   * Ex: Running a task every hour that checks for an updated product feed file
   * Ex: Running a task every minute to ping an external system as part of a health check
