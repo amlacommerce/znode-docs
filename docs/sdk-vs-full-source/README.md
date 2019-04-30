@@ -22,10 +22,10 @@ Note that regardless of whether working with the full source code or the SDK, th
 
 One format in which Znode is distributed, is as an SDK, available in the [SDK respository](https://github.com/amlacommerce/znode).
 
-The SDK [Visual Studio Solution](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Multifront.sln) contains ~15 projects. Many [core Znode libraries](/docs/core-znode-libraries/README.md) are pre-packaged as NuGet packages and referenced from this solution.
+The SDK [Visual Studio Solution](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Multifront.sln) contains ~15 projects. Many core Znode libraries are pre-packaged as NuGet packages and referenced from this solution.
 
 * **Do** use the SDK to implement all customizations for specific customers/implementations.
-* **Don't** use the SDK to try to debug errors originating from the [core Znode libraries](/docs/core-znode-libraries/README.md).
+* **Don't** use the SDK to try to debug errors originating from the core Znode libraries.
 
 ## Full Source Code Format
 
@@ -33,8 +33,8 @@ The other format in which Znode is distributed, is as the full source code, avai
 
 The full source code [Visual Studio Solution](https://github.com/amlacommerce/znode-source/blob/master/Projects/Znode.Multifront.sln) contains ~40 projects. There are more projects in this solution than the SDK solution due to the core Znode libraries' source code residing in the project as opposed to being published through NuGet.
 
-* **Do** use the full source code if necessary to debug errors originating from the [core Znode libraries](/docs/core-znode-libraries/README.md).
-* **Do** use the full source code to implement [potential fixes](/docs/submitting-pull-requests/README.md) for bugs or undesirable behavior found in the [core Znode libraries](/docs/core-znode-libraries/README.md).
+* **Do** use the full source code if necessary to debug errors originating from the core Znode libraries.
+* **Do** use the full source code to implement potential fixes to [submit pull requests](/docs/submitting-pull-requests/README.md) for bugs or undesirable behavior found in the core Znode libraries.
 * **Don't** use the full source code to implement any custom functionality for customers.
 
 ## Developing with Both Formats

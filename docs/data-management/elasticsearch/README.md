@@ -6,9 +6,9 @@ As a Znode developer, it's typically unnecessary to directly interact with Elast
 
 ## Elasticsearch Configuration
 
-The ElasticSearch server to which Znode points is configured in the API's web.config. More detail about the `ElasticSearchRootUri` setting are [here](/docs/configuration/README.md).
+The ElasticSearch server to which Znode points is configured in the API's web.config. More detail about the `ElasticSearchRootUri` setting is [here](/docs/configuration/README.md).
 
-ElasticSearch index name configuration is stored in the SQL database. More detail about Elasticsearch index names is [here](docs/multi-environment/README.md).
+ElasticSearch *index name* configuration is stored in the SQL database. More detail about Elasticsearch index names is [here](docs/multi-environment/README.md).
 
 ## Elasticsearch API
 
