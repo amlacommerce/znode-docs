@@ -32,7 +32,7 @@ Znode persists data to 3 types of database systems, SQL Server, MongoDB, and Ela
 
 * SQL Server
   * Normalized system of record for everything
-  * Can recreate MongoDB and Elasticsearch data
+  * Contains source data to recreate MongoDB and Elasticsearch data
 * MongoDB
   * Stores denormalized products and content for speed and scale
 * Elasticsearch
