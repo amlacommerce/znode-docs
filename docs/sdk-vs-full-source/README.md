@@ -6,7 +6,7 @@ Znode is distributed in two formats, an SDK format, and a full source code forma
 
 Znode is a large platform with lots of functionality that covers most stardard use cases encountered on eCommerce stores. At the same time, Znode can be easily extended with custom behavior to handle additional use cases.
 
-Availability of the two formats offers the transparent debuggability of the full source code, while also enforcing clean implementation practices of custom functionality. This ensures easier upgrade paths to newer versions of Znode.
+Availability of the two formats offers the transparent debuggability of the full source code, while also enforcing clean implementation practices in the SDK. Implementing custom work in the SDK ensures easier upgrade paths to newer versions of Znode.
 
 ## Core Znode Libraries
 
