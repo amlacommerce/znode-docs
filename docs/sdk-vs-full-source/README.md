@@ -34,7 +34,7 @@ The other format in which Znode is distributed, is as the full source code, avai
 The full source code [Visual Studio Solution](https://github.com/amlacommerce/znode-source/blob/master/Projects/Znode.Multifront.sln) contains ~40 projects. There are more projects in this solution than the SDK solution due to the core Znode libraries' source code residing in the solution as opposed to being published through NuGet.
 
 * **Do** use the full source code if necessary to debug errors originating from the core Znode libraries.
-* **Do** use the full source code debug API methods where necessary to learn more about the API's method's inputs/outputs/behavior.
+* **Do** use the full source code to debug API methods where necessary to learn more about the API's method's inputs/outputs/behavior.
 * **Do** use the full source code to implement potential fixes to [submit pull requests](/docs/submitting-pull-requests/README.md) for bugs or undesirable behavior found in the core Znode libraries.
 * **Don't** use the full source code to implement any custom functionality for customers.
 
