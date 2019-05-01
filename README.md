@@ -27,4 +27,4 @@ The following documentation is available for reference as needed:
 * **[DevOps](/docs/dev-ops/README.md)**
     * Integrating Znode into CI/CD systems.
 * **[Submitting Pull Requests](/docs/submitting-pull-requests/README.md)**
-    * Handling pull requests and submitting change requests to Amla.
+    * Submitting change requests to Amla.
