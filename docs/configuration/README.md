@@ -16,7 +16,7 @@ To disable authentication, set the `IsGlobalAPIAuthorization` setting to `false`
 
 ## Disabling Caching
 
-Znode implements caching at numerous layers of the architecture. This caching allows the WebStore to handle sprikes in traffic loads while maintaining high levels of performance. However, when debugging backend logic, it is preferrable to disable caching to eliminate variables, avoid potential race conditions, and ensure a deterministic execution path.
+Znode implements caching at numerous layers of the architecture. This caching allows the WebStore to handle spikes in traffic loads while maintaining high levels of performance. However, when debugging backend logic, it is preferrable to disable caching to eliminate variables, avoid potential race conditions, and ensure a deterministic execution path.
 
 To disable caching at a global level, modify the two records of the `ZnodeApplicationCache` table to be false. The following SQL snippet accomplishes this:
 
