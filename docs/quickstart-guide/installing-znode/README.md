@@ -18,9 +18,9 @@ Run the `clone` command at a Git Bash window:
 If prompted to do so, provide your GitHub credentials.
 
 ## Part 2: Creating a Znode Database
-The entire Znode database is maintained inside [its own VS project](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode_Multifront_Dev/Znode_Multifront_Dev.sln), but a [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.2.0%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_911.sql) is also kept in the repository to easily create a new database. To run the create script:
+The entire Znode database is maintained inside [its own VS project](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode_Multifront_Dev/Znode_Multifront_Dev.sln), but a [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.2.0%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_920.sql) is also kept in the repository to easily create a new database. To run the create script:
 1. Open SQL Server Managment Studio (SSMS).
-1. In SSMS, open the DB [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.2.0%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_911.sql).
+1. In SSMS, open the DB [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.2.0%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_920.sql).
 1. Run the script. A new Znode DB will be created.
 
 Note that the default DB name is 'Znode_Multifront_X', where X is the version. Search and replace all occurrances of that string in the script to choose a different name.
@@ -42,7 +42,7 @@ With Znode's dependencies installed and NuGet configured, it is now time to run 
 1. Build the solution.
 1. Configure SQL connection strings in the API's [Web.config](https://github.com/amlacommerce/znode-source/blob/master/Projects/Znode.Engine.Api/Web.config). The `ZnodeECommerceDB` and `Znode_Entities` strings need to be configured. For both settings, set:
     1. `Data Source`, `User Id`, and `Password` to that which is used to connect with SSMS (or as desired).
-    1. `Initial Catalog` to the name of the Znode DB. The default is `Znode_Multifront_911`.
+    1. `Initial Catalog` to the name of the Znode DB. The default is `Znode_Multifront_{VERSION}` where `{VERSION}` is replaced with the version number.
 1. Run the solution. Visual Studio should automatically open the 3 applications in the default browser.
 
 ## Part 5: Exploring Znode
