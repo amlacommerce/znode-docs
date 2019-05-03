@@ -21,7 +21,7 @@ The page has information about some of the common problems that Znode developers
 
 **Bottom line:** This error can be safely ignored if not interested in Znode's deprecated SSRS reports.
 
-## TSC Error
+## TypeScript Compiler (TSC) Error
 
 **Problem:** When building the Znode solution with Visual Studio, TypeScript errors occur.
 
@@ -31,7 +31,7 @@ The page has information about some of the common problems that Znode developers
 * Upgrade the version of TypeScript used in the Admin UI and WebStore projects.
   * For the `Znode.Engine.Admin` and `Znode.Engine.WebStore` projects, in Visual Studio, right click on the project, go to `Properties` > `TypeScript Build` tab, then in the `TypeScript version` field choose a later (or latest) version. Try building again, possibly restarting Visual Studio and/or Windows if necessary.
 
-## Roslyn csc.exe Error
+## Roslyn 'csc.exe' Error
 
 **Problem:** The Znode Admin UI / API / WebStore application(s) are failing to load, possibly (but not necessarily) giving the following error:
 
