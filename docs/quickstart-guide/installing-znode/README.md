@@ -57,5 +57,9 @@ On a fresh install, the WebStore (running on http://localhost:3288 by default) w
 1. Click the globe icon on the Fine Foods row. This will publish the Fine Foods sample content and products.
 1. Refresh the WebStore. The WebStore should render with the default theme and the sample Fine Foods content.
 
+### Troubleshooting Common Problems
+
+If you run into problems while trying to get Znode to build and run, see [Troubleshooting Common Problems](/docs/troubleshooting/README.md) for possible answers.
+
 ### Next Steps
 Congratulations if you have successfully made it this far! Review other parts of this [documentation](/README.md) for more in-depth information where desired.

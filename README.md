@@ -22,9 +22,11 @@ The following documentation is recommended material for any new Znode developer:
 
 ## Extended Documentation
 The following documentation is available for reference as needed:
-* **[Elasticsearch In-depth](/docs/data-management/elasticsearch/README.md)**
-  * More details about Znode's usage of Elasticsearch.
-* **[DevOps](/docs/dev-ops/README.md)**
-    * Integrating Znode into CI/CD systems.
 * **[Submitting Pull Requests](/docs/submitting-pull-requests/README.md)**
     * Submitting change requests to Amla.
+* **[DevOps](/docs/dev-ops/README.md)**
+    * Integrating Znode into CI/CD systems.
+* **[Elasticsearch In-depth](/docs/data-management/elasticsearch/README.md)**
+  * More details about Znode's usage of Elasticsearch.
+* **[Troubleshooting Common Problems](/docs/troubleshooting/README.md)**
+  * Common problems (and solutions) encountered during Znode development.
