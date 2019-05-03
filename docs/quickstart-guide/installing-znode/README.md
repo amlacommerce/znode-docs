@@ -18,9 +18,9 @@ Run the `clone` command at a Git Bash window:
 If prompted to do so, provide your GitHub credentials.
 
 ## Part 2: Creating a Znode Database
-The entire Znode database is maintained inside [its own VS project](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode_Multifront_Dev/Znode_Multifront_Dev.sln), but a [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.1.1%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_911.sql) is also kept in the repository to easily create a new database. To run the create script:
+The entire Znode database is maintained inside [its own VS project](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode_Multifront_Dev/Znode_Multifront_Dev.sln), but a [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.2.0%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_911.sql) is also kept in the repository to easily create a new database. To run the create script:
 1. Open SQL Server Managment Studio (SSMS).
-1. In SSMS, open the DB [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.1.1%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_911.sql).
+1. In SSMS, open the DB [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.2.0%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_911.sql).
 1. Run the script. A new Znode DB will be created.
 
 Note that the default DB name is 'Znode_Multifront_X', where X is the version. Search and replace all occurrances of that string in the script to choose a different name.
