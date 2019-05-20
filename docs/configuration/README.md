@@ -78,7 +78,7 @@ A typical configuration value, pointing at a remote machine, looks like this:
 <add name="ZnodeMongoDBForLog" connectionString="mongodb://znode.dev.mycompany.com:27017/ZnodeMultifront_LogMessages" />
 ```
 
-### Shared SQL Configuration
+### Shared SQL
 
 Sharing SQL databases is handled by updating the `ZnodeECommerceDB` and `Znode_Entities` settings. Both settings are in the API's [web.config](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Engine.Admin/Web.config). The pattern for these settings is as follows:
 
