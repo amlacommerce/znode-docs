@@ -53,7 +53,7 @@ The next step is to re-create the Elasticsearch index.
 1. Select the desired catalog in the `Catalog` field.
 1. Click `Create Index` to create the new empty index.
 
-This step is optional. This step can be safely skipped because Znode will automatically create the index if necessary when triggering the publish in the next step.
+Note: This step is optional. This step can be safely skipped because Znode will automatically create the index if necessary when triggering the publish in the next step.
 
 ### Step 4: Re-publish Store
 
