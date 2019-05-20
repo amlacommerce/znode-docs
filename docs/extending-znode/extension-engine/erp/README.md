@@ -26,6 +26,10 @@ Touch points are most commonly used for:
 
 ## Creating a Custom ERP Connector
 
+The below instructions walk through the process of creating a custom ERP connector and touch point.
+
+### Create ERP Connector
+
 To create a custom ERP Connector, use the sample MockERPConnector as a starting point.
 
 1. Copy the [MockERPConnector](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Projects/Libraries/Znode.Engine.ERPConnector/MockERPConnector) as a starting point.
@@ -43,7 +47,7 @@ To create a custom ERP Connector, use the sample MockERPConnector as a starting 
 1. Logout and log-in for the changes to take effect in the Znode Admin.
 1. Confirm the changes have taken effect in the Znode Admin module menu. The UI should now reflect the new configuration.
 
-### Create a Custom Touch Point
+### Create Touch Point
 
 With the new ERP Connector enabled, it is time to create a touch point that will hold the custom logic.
 
