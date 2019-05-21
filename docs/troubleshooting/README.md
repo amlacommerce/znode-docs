@@ -70,6 +70,6 @@ To determine if this is happening:
 
 ![store publish expected scripts](_assets/store-publish-expected-scripts.png)
 
-If the scripts shown on the local environment is non-existent or very short (just a couple scripts), as opposed to having several dozen scripts as expected, then this most likely means that the Visual Studio build is not proplerly building the scripts.
+If the scripts shown on the local environment is non-existent or very short (just a couple scripts), as opposed to having several dozen scripts as expected, then this most likely means that Visual Studio is not properly building the scripts.
 
-To fix this
+To fix this, make sure that the [Web Compiler](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) is properly installed and configured as described in the [Installing Znode](/docs/quickstart-guide/installing-znode/README.md) document.
