@@ -32,7 +32,13 @@ To successfully build Znode, it is necessary to configure NuGet to access the pr
     1. The `Source` that needs to be entered into Visual Studio is: http://nuget.znode.com/nuget.
     1. The `Username` and `Password` that needs to be entered into Visual Studio is that which the Znode team provided.
 
-## Part 4: Configuring, Building and Running Znode
+## Part 4: Install Web Compiler
+Znode uses TypeScript and SASS to files for much of the source code. The broswer only understands JavaScript and CSS though, so the Visual Studio solution must be configured to transpile *.ts files to *.js files and *.scss files to *.css files.
+
+1. Install the [Visual Studio Web Compiler Plugin](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) if not already done.
+1. In Visual Studio, right click on the [compilerconfig.json](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Engine.WebStore/compilerconfig.json) file and go to the “Web Compiler” submenu, check the “Enable Compile on Build…” option.
+
+## Part 5: Configuring, Building and Running Znode
 With Znode's dependencies installed and NuGet configured, it is now time to run Znode.
 1. Open [the main Znode solution](https://github.com/amlacommerce/znode-source/blob/master/Projects/Znode.Multifront.sln).
 1. [Set multiple startup projects](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-set-multiple-startup-projects?view=vs-2017). The following projects need to start:
@@ -45,7 +51,7 @@ With Znode's dependencies installed and NuGet configured, it is now time to run 
     1. `Initial Catalog` to the name of the Znode DB. The default is `Znode_Multifront_{VERSION}` where `{VERSION}` is replaced with the version number.
 1. Run the solution. Visual Studio should automatically open the 3 applications in the default browser.
 
-## Part 5: Exploring Znode
+## Part 6: Exploring Znode
 Before exploring Znode in-depth, the following points should be known.
 
 ### Logging in to the Admin UI

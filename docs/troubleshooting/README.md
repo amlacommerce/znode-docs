@@ -48,3 +48,28 @@ Alternatively, there may be no useful error presented. To check if this problem 
 * Copy the `roslyn` folder from one of the applications that has it to the application(s) that don't have it.
 * Update the Microsoft.CodeDom.Providers.DotNetCompilerPlatform NuGet package.
 * Download [this copy](_assets/roslyn.zip) of the `roslyn` folder and place it in the application `bin` folders.
+
+## Failed to Publish Error
+
+**Problem:** The Znode Admin UI's Store publish functionality is failing.
+
+When clicking the publish button for a store:
+
+![admin ui store publish](_assets/store-publish.png)
+
+The following error results:
+
+![publish failed message](_assets/store-publish-failed.png)
+
+**Possible Solution:** This problem usually indicates that scripts are not properly loading in the Admin UI.
+
+To determine if this is happening:
+
+1. Open the browser's developer tools while on the `Stores & Reps` > `Stores` screen (http://localhost:6766/Store/List#).
+1. Navigate to the `Scripts` > `Core` > `Znode` directory. A list of scripts should be loaded:
+
+![store publish expected scripts](_assets/store-publish-expected-scripts.png)
+
+If the scripts shown on the local environment is non-existent or very short (just a couple scripts), as opposed to having several dozen scripts as expected, then this most likely means that the Visual Studio build is not proplerly building the scripts.
+
+To fix this
