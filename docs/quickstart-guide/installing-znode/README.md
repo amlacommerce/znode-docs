@@ -3,8 +3,9 @@ These instructions help with Znode setup from start to finish. The instructions 
 * Part 1: Getting the Znode Code
 * Part 2: Creating a Znode Database
 * Part 3: Configuring NuGet
-* Part 4: Configuring, Building and Running Znode
-* Part 5: Exploring Znode
+* Part 4: Installing Web Compiler
+* Part 5: Configuring, Building and Running Znode
+* Part 6: Exploring Znode
 
 It is assumed that Znode's dependencies are already installed. If that's not the case, start by [Installing Znode Dependencies](../installing-dependencies/README.md) first.
 
@@ -32,7 +33,7 @@ To successfully build Znode, it is necessary to configure NuGet to access the pr
     1. The `Source` that needs to be entered into Visual Studio is: http://nuget.znode.com/nuget.
     1. The `Username` and `Password` that needs to be entered into Visual Studio is that which the Znode team provided.
 
-## Part 4: Install Web Compiler
+## Part 4: Installing Web Compiler
 Znode uses TypeScript and SASS to files for much of the source code. The broswer only understands JavaScript and CSS though, so the Visual Studio solution must be configured to transpile *.ts files to *.js files and *.scss files to *.css files.
 
 1. Install the [Visual Studio Web Compiler Plugin](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) if not already done.
