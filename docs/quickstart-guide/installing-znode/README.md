@@ -2,8 +2,8 @@
 These instructions help with Znode setup from start to finish. The instructions are divided into the following parts:
 * Part 1: Getting the Znode Code
 * Part 2: Creating a Znode Database
-* Part 3: Configuring NuGet
-* Part 4: Installing Web Compiler
+* Part 3: Installing Web Compiler
+* Part 4: Configuring NuGet
 * Part 5: Configuring, Building and Running Znode
 * Part 6: Exploring Znode
 
@@ -26,18 +26,18 @@ The entire Znode database is maintained inside [its own VS project](https://gith
 
 Note that the default DB name is 'Znode_Multifront_X', where X is the version. Search and replace all occurrances of that string in the script to choose a different name.
 
-## Part 3: Configuring NuGet
+## Part 3: Installing Web Compiler
+Znode uses TypeScript and SASS to files for much of the source code. The broswer only understands JavaScript and CSS though, so the Visual Studio solution must be configured to transpile *.ts files to *.js files and *.scss files to *.css files.
+
+1. Install the [Visual Studio Web Compiler Plugin](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) if not already done.
+1. In Visual Studio, for both the Admin UI (Znode.Engine.Admin) and WebStore (Znode.Engine.WebStore) projects, right click on the compilerconfig.json file that is in the root of the project and go to the “Web Compiler” submenu, check the “Enable Compile on Build…” option.
+
+## Part 4: Configuring NuGet
 To successfully build Znode, it is necessary to configure NuGet to access the private Znode NuGet Registry.
 1. Request access to the Znode NuGet Registry by emailing support@znode.com.
 1. Add a custom NuGet package source in Visual Studio. Microsoft's instructions for doing so are [here](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources).
     1. The `Source` that needs to be entered into Visual Studio is: http://nuget.znode.com/nuget.
     1. The `Username` and `Password` that needs to be entered into Visual Studio is that which the Znode team provided.
-
-## Part 4: Installing Web Compiler
-Znode uses TypeScript and SASS to files for much of the source code. The broswer only understands JavaScript and CSS though, so the Visual Studio solution must be configured to transpile *.ts files to *.js files and *.scss files to *.css files.
-
-1. Install the [Visual Studio Web Compiler Plugin](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) if not already done.
-1. In Visual Studio, for both the Admin UI (Znode.Engine.Admin) and WebStore (Znode.Engine.WebStore) projects, right click on the compilerconfig.json file that is in the root of the project and go to the “Web Compiler” submenu, check the “Enable Compile on Build…” option.
 
 ## Part 5: Configuring, Building and Running Znode
 With Znode's dependencies installed and NuGet configured, it is now time to run Znode.
