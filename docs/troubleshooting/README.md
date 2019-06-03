@@ -10,6 +10,8 @@ The page has information about some of the common problems that Znode developers
 
 * Try building again. Sometimes this is enough to push through the failures.
 * Try a full clean/rebuild.
+* Try restarting Visual Studio.
+* Try restarting the computer entirely (sometimes Visual Studio and/or MSBuild can leave behind corrupted processes that need to be restarted).
 
 ## Znode.Libraries.Report Project Failed to Load
 
