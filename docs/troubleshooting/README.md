@@ -10,6 +10,8 @@ The page has information about some of the common problems that Znode developers
 
 * Try building again. Sometimes this is enough to push through the failures.
 * Try a full clean/rebuild.
+* Try restarting Visual Studio.
+* Try restarting the computer entirely (sometimes Visual Studio and/or MSBuild can leave behind corrupted processes that need to be restarted).
 
 ## Znode.Libraries.Report Project Failed to Load
 
@@ -37,7 +39,7 @@ The page has information about some of the common problems that Znode developers
 
 ![roslyn csc.exe error](_assets/roslyn-csc-error.png)
 
-Alternatively, there may be no useful error presented. To check if this problem is the cause of one (or more) of the applications failing to load, check the `bin` folders of the applications. If any of the following folders are empty, the problem is occuring:
+However, there may be no useful error presented. To check if this problem is the cause of one (or more) of the applications failing to load, check the `bin` folders of the applications. If any of the following folders are empty, the problem is occuring:
 
 * Znode.Engine.Admin\bin\roslyn
 * Znode.Engine.Api\bin\roslyn
