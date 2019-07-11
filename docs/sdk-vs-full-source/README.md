@@ -29,9 +29,9 @@ The SDK [Visual Studio Solution](https://github.com/amlacommerce/znode/blob/mast
 * **Do** use the SDK to implement all customizations for specific customers/implementations.
 * **Don't** use the SDK to try to debug errors originating from the core Znode libraries.
 
-## Full Source Code Format
+## Source Code Format
 
-The other format in which Znode is distributed, is as the full source code, available in the [full source code repository](https://github.com/amlacommerce/znode-source).
+The other format in which Znode is distributed, is as the source code, available in the [Source Code repository](https://github.com/amlacommerce/znode-source).
 
 The full source code [Visual Studio Solution](https://github.com/amlacommerce/znode-source/blob/master/Projects/Znode.Multifront.sln) contains ~40 projects. There are more projects in this solution than the SDK solution due to the core Znode libraries' source code residing in the solution as opposed to being published through NuGet.
 
