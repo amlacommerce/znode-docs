@@ -69,4 +69,9 @@ On a fresh install, the WebStore (running on http://localhost:3288 by default) w
 If you run into problems while trying to get Znode to build and run, see [Troubleshooting Common Problems](/docs/troubleshooting/README.md) for possible answers.
 
 ### Next Steps
-Congratulations if you have successfully made it this far! Review other parts of this [documentation](/README.md) for more in-depth information where desired.
+
+Congratulations if you have successfully made it this far!
+
+It is important to note that these instructions walk through the process of building and running the [Znode Source Code](https://github.com/amlacommerce/znode-source) repository. There is also an [SDK](https://github.com/amlacommerce/znode) repository available. Read the [SDK vs. Full Source Development](/docs/sdk-vs-full-source/README.md) documentation to understand the purpose of the two respositories.
+
+Review other parts of this [documentation](/README.md) for more in-depth information where desired.
