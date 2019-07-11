@@ -1,6 +1,8 @@
 # SDK vs. Full Source Development
 
-Znode is distributed in two formats, an SDK format, and a full source code format. This page describes the differences between the two formats to help a Znode developer decide which format is right for their use case.
+Znode is distributed in two formats, an [SDK](https://github.com/amlacommerce/znode)* format, and a [Source Code](https://github.com/amlacommerce/znode-source)* format. This page describes the differences between the two formats to help a Znode developer decide which format is right for their use case.
+
+*\*Note that the links on this page may show 404 not found, as the SDK and Source Code repositorites require Amla's permission to access.*
 
 ## Reason for Availability of Two Formats
 
