@@ -25,9 +25,9 @@ The page has information about some of the common problems that Znode developers
 
 ## TypeScript Compiler (TSC) Error
 
-**Problem:** When building the Znode solution with Visual Studio, TypeScript errors occur.
+**Problem:** When building the Znode solution with Visual Studio, TypeScript errors occur. This problem sometimes occurs in the Admin UI and WebStore applications but is inconsistent.
 
-**Possible Solutions:** This problem sometimes occurs in the Admin UI and WebStore applications but is inconsistent. Possible solutions include:
+**Possible Solutions:** Possible solutions include:
 
 * Restart Visual Studio and/or Windows itself.
 * Upgrade the version of TypeScript used in the Admin UI and WebStore projects.
