@@ -41,7 +41,7 @@ Examples of two **Create Scripts** include:
 
 ### Feature Update Scripts
 
-With each feature release, a new 'update' script is provided. This script can be run to update a DB from the previous feature version to target version.
+With each feature release, a new 'update' script is provided. This script can be run to update a DB from the previous feature version to the target version.
 
 These scripts are all within the [ZnodeMultifront/Database/Znode Multifront Upgrade Scripts](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Database/Znode%20Multifront%20Upgrade%20Scripts) folder of the [SDK repository](https://github.com/amlacommerce/znode).
 
