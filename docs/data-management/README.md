@@ -1,8 +1,6 @@
 # Data Management
 
-Znode persists data to a Elasticsearch, MongoDB, and SQL Server databases. The SQL Server database is the system of record for everything, with the Elasticsearch and MongoDB data being derived from the SQL data.
-
-It can be helpful for developers to know more details about this flow of data, especially if working on customizations to backend behavior.
+This documentation is about managing Znode's usage of SQL Server, MongoDB, and ElasticSearch.
 
 ## Table of Contents
 
