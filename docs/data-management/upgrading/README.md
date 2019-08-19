@@ -18,7 +18,7 @@ However, Znode operates with this convention:
 PLATFORM.MAJOR.MINOR.PATCH
 ```
 
-Note that Znode introduces an additional `PLATFORM` version segment at the front. This number is currently at `9` (as of 2019). This segment is incremented on a very sparing basis; typically every 2-3 years when a major technology stack change occurs.
+Note that Znode introduces an additional `PLATFORM` version segment at the front. This number is currently at `9` (as of 2019). This segment is incremented on a very sparing basis; typically every 3+ years when a major technology stack change occurs.
 
 For example, Znode v9.2.1.5 would have a `PLATFORM` version of `9`, a `MAJOR` version of `2`, a `MINOR` version of `1`, a `PATCH` version of `5`.
 
