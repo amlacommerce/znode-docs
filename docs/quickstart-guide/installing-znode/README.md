@@ -14,17 +14,23 @@ It is assumed that [Git](https://git-scm.com/) is already installed. See Git's [
 
 Run the `clone` command at a Git Bash window:
 
-`git clone https://github.com/amlacommerce/znode-source.git`
+`git clone https://github.com/amlacommerce/znode.git`
 
 If prompted to do so, provide your GitHub credentials.
 
 ## Part 2: Creating a Znode Database
-The entire Znode database is maintained inside [its own VS project](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode_Multifront_Dev/Znode_Multifront_Dev.sln), but a [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.2.0%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_920.sql) is also kept in the repository to easily create a new database. To run the create script:
-1. Open SQL Server Managment Studio (SSMS).
-1. In SSMS, open the DB [create script](https://github.com/amlacommerce/znode-source/blob/master/Database/Znode%20Multifront%209.2.0%20Database%20Script%20(for%20fresh%20installation)/Znode_Multifront_920.sql).
-1. Run the script. A new Znode DB will be created.
+DB [create scripts](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Database) are kept in the repository to enable easy creation of a new database.
 
-Note that the default DB name is 'Znode_Multifront_X', where X is the version. Search and replace all occurrances of that string in the script to choose a different name.
+There is a 'create script' within each of the folders that end with the '(for fresh installation)' suffix. Choose the latest available version (or whichever version is desired).
+
+For more detail about how these scripts are organized, see [Database Scripts](/docs/data-management/upgrading/README.md).
+
+Once the desired DB create script is determined, follow these steps to run the create script and create the DB:
+1. Open SQL Server Managment Studio (SSMS).
+1. In SSMS, open the DB create script.
+1. Run the script. A new Znode DB will be created.*
+
+*_Note that the default DB name is 'Znode_Multifront_X', where X is the version. Search and replace all occurrances of that string in the script to choose a different name if desired._
 
 ## Part 3: Installing Web Compiler
 Znode uses TypeScript and SASS to files for much of the source code. The broswer only understands JavaScript and CSS though, so the Visual Studio solution must be configured to transpile *.ts files to *.js files and *.scss files to *.css files.
@@ -41,13 +47,13 @@ To successfully build Znode, it is necessary to configure NuGet to access the pr
 
 ## Part 5: Configuring, Building and Running Znode
 With Znode's dependencies installed and NuGet configured, it is now time to run Znode.
-1. Open [the main Znode solution](https://github.com/amlacommerce/znode-source/blob/master/Projects/Znode.Multifront.sln).
+1. Open the main Znode solution, [Znode.Multifront.sln](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Projects).
 1. [Set multiple startup projects](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-set-multiple-startup-projects?view=vs-2017). The following projects need to start:
     - Znode.Engine.Admin
     - Znode.Engine.API
     - Znode.Engine.WebStore
 1. Build the solution.
-1. Configure SQL connection strings in the API's [Web.config](https://github.com/amlacommerce/znode-source/blob/master/Projects/Znode.Engine.Api/Web.config). The `ZnodeECommerceDB` and `Znode_Entities` strings need to be configured. For both settings, set:
+1. Configure SQL connection strings in the API's [Web.config](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Engine.Api/Web.config). The `ZnodeECommerceDB` and `Znode_Entities` strings need to be configured. For both settings, set:
     1. `Data Source`, `User Id`, and `Password` to that which is used to connect with SSMS (or as desired).
     1. `Initial Catalog` to the name of the Znode DB. The default is `Znode_Multifront_{VERSION}` where `{VERSION}` is replaced with the version number.
 1. Run the solution. Visual Studio should automatically open the 3 applications in the default browser.
@@ -72,6 +78,6 @@ If you run into problems while trying to get Znode to build and run, see [Troubl
 
 Congratulations if you have successfully made it this far!
 
-It is important to note that these instructions walk through the process of building and running the [Znode Source Code](https://github.com/amlacommerce/znode-source) repository. There is also an [SDK](https://github.com/amlacommerce/znode) repository available. Read the [SDK vs. Full Source Development](/docs/sdk-vs-full-source/README.md) documentation to understand the purpose of the two respositories.
+It is important to note that these instructions walk through the process of building and running the [Znode SDK](https://github.com/amlacommerce/znode) repository. There is also a [Znode Source Code](https://github.com/amlacommerce/znode-source) repository available. Read the [SDK vs. Full Source Development](/docs/sdk-vs-full-source/README.md) documentation to understand the purpose of the two respositories.
 
 Review other parts of this [documentation](/README.md) for more in-depth information where desired.
