@@ -1,4 +1,4 @@
-# DB Version Update Scripts
+# Database Scripts
 
 When new versions of Znode are released, the SQL DB typically (but not always) needs to be updated. When the DB *does* need to be updated, a single SQL script is always provided to make it easy to perform the update.
 
