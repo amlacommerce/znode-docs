@@ -100,6 +100,8 @@ To update, first the following **Feature Update Scripts** scripts would be execu
 
 Next, the following **Patch Update Scripts** would be executed to update the DB from v9.2.1(.0) to v9.2.1.5:
 
+* ~~Znode_Multifront_9_2_1_1_Patch.sql~~
+  * This file does not exist but is listed for explanatory purposes. This file does not exist because the Znode v9.2.1.1 patch did not require any DB changes.
 * [Znode_Multifront_9_2_1_2_Patch.sql](https://github.com/amlacommerce/znode/blob/v9.2.1.5/ZnodeMultifront/Database/Znode_Multifront_9_2_1_2_Patch.sql)
   * Running this updates the DB from v9.2.1(.0) to v9.2.1.2.
 * [Znode_Multifront_9_2_1_3_Patch.sql](https://github.com/amlacommerce/znode/blob/v9.2.1.5/ZnodeMultifront/Database/Znode_Multifront_9_2_1_3_Patch.sql)
