@@ -44,7 +44,7 @@ This diagram shows what a typical Znode deployment looks like.
 
 ![Diagram](_assets/deployment-architecture.png)
 
-<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?user=bsmith1310@gmail.com&org=amlacommerce&repo=znode-docs-test&path=docs/introduction/_assets/deployment-architecture.png" target="_blank">Edit</a>
+<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?user=bsmith1310@gmail.com&org=amlacommerce&repo=znode-docs&path=docs/introduction/_assets/deployment-architecture.png" target="_blank">Edit</a>
 
 ## Logical Architecture
 
@@ -52,4 +52,4 @@ This diagram shows a different view of the system, emphasizing the strict layeri
 
 ![Diagram](_assets/logical-layers.png)
 
-<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?user=bsmith1310@gmail.com&org=amlacommerce&repo=znode-docs-test&path=docs/introduction/_assets/logical-layers.png" target="_blank">Edit</a>
+<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?user=bsmith1310@gmail.com&org=amlacommerce&repo=znode-docs&path=docs/introduction/_assets/logical-layers.png" target="_blank">Edit</a>
