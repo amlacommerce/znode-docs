@@ -6,7 +6,22 @@ As mentioned, general .NET training is not within the scope of the Znode Docs. T
 
 ## Define API Config Transforms
 
-TODO
+This example uses the default Web.Release.config files as config transform overrides for the published packages. These config transforms need to change any settings from what the developer is using on localhost (ie: what is defined in Web.config), to properly configure the applications as desired on the server-hosted sites.
+
+![img](_assets/0000_api_web_release_config.png)
+
+This example first walks through publishing the sites to simply run on localhost on the server. This means the only configuration values that need to be overridden are the DB connection strings. For example:
+
+```
+<add name="ZnodeECommerceDB" connectionString="Data Source=vm-sql-01;Initial Catalog=znode_931;User Id=sa;Password=myP@ssword;Column Encryption Setting=Enabled" providerName="System.Data.SqlClient" xdt:Transform="SetAttributes" xdt:Locator="Match(name)" />
+<add name="Znode_Entities" connectionString="metadata=res://*/DataModel.ZnodeEntities.csdl|res://*/DataModel.ZnodeEntities.ssdl|res://*/DataModel.ZnodeEntities.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=vm-sql-01;Initial Catalog=znode_931;User Id=sa;Password=myP@ssword;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" xdt:Transform="SetAttributes" xdt:Locator="Match(name)" />
+```
+
+The `Data Source`, `Initial Catalog`, `User Id`, and `Password` all need to be properly filled in depending on the details of the DB to connect to.
+
+These DB connection strings need to be added, and other overrides should be removed, resulting in something like the following:
+
+![img](_assets/0001_api_config.png)
 
 ## Publish the Znode API
 
@@ -14,27 +29,47 @@ To publish a Znode install to IIS, it's best to start with the API. This is beca
 
 1. Create a publish profile for the `Znode.Engine.Api` project.
 
-![0010](_assets/0010_api_publish.png)
+![img](_assets/0010_api_publish.png)
 
-![0020](_assets/0020_api_new_profile.png)
+![img](_assets/0020_api_new_profile.png)
 
-![0030](_assets/0030_api_create_profile.png)
+![img](_assets/0030_api_create_profile.png)
 
 2. Build a published package.
 
-![0040](_assets/0040_api_build_and_publish.png)
+![img](_assets/0040_api_build_and_publish.png)
 
-![0050](_assets/0050_api_publish_processing.png)
+![img](_assets/0050_api_publish_processing.png)
 
-![0060](_assets/0060_api_publish_log_output.png)
+![img](_assets/0060_api_publish_log_output.png)
 
 2. ZIP the published package.
 
-![0070](_assets/0070_api_open_folder.png)
+![img](_assets/0070_api_open_folder.png)
+
+![img](_assets/0080_api_create_zip.png)
+
+3. Copy the ZIP to the server.
+
+![img](_assets/0090_api_bin_zip.png)
+
+![img](_assets/0100_api_bin_zip_renaming.png)
+
+![img](_assets/0110_api_bin_zip_renaming_to_api.png)
+
+![img](_assets/0120_api_bin_zip_copy.png)
+
+![img](_assets/0140_api_paste_zip.png)
+
+3. Un-ZIP the ZIP on the server.
+
+![img](_assets/0150_api_unzip.png)
 
 ## Create the API IIS Site
 
 ## Confirm the API IIS Site Runs
+
+## Define Admin UI Config Transforms
 
 ## Publish the Znode Admin UI
 
@@ -42,10 +77,16 @@ To publish a Znode install to IIS, it's best to start with the API. This is beca
 
 ## Confirm the Admin UI IIS Site Runs
 
-## Publish the Znode WebStore UI
+## Define WebStore UI Config Transforms
 
-## Create the Znode WebStore UI IIS Site
+## Publish the WebStore UI
+
+## Create the WebStore UI IIS Site
 
 ## Confirm the WebStore UI IIS Site Runs
 
 ## Configure External (non-localhost) URL's
+
+1. Go into Admin UI on server, add URL.
+1. Paste same URL's into config files.
+1. Re-publish.
