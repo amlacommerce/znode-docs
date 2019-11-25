@@ -67,7 +67,17 @@ To publish a Znode install to IIS, it's best to start with the API. This is beca
 
 ## Create the API IIS Site
 
+Once the publish package is on the server, a new IIS site must be created to host the package as a site. Note that creating an IIS site is only needed on initial deploy.
+
+![img](_assets/0160_api_create_iis_site.png)
+
 ## Confirm the API IIS Site Runs
+
+Now that the API site is created, open `localhost:44762` in a browser to confirm it loads.
+
+![img](_assets/0170_api_browse_api_site.png)
+
+![img](_assets/0180_api_tab.png)
 
 ## Define Admin UI Config Transforms
 
