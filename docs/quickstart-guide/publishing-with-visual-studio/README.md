@@ -125,6 +125,14 @@ Repeat the same process of creating a site, but for the WebStore UI.
 
 ## Configure External (non-localhost) URL's
 
-1. Go into Admin UI on server, add URL.
-1. Paste same URL's into config files.
-1. Re-publish.
+To expose the Znode install on external/public URL's:
+
+1. Create the CNAME/A records with the domain registrar (eg: AWS, GoDaddy, etc.).
+1. Configure Znode's DB with the URL domains.
+  1. The `ZnodeDomain` table needs to have entries for each URL that the API, Admin, and WebStore are to be hosted on. These entries can be directly edited (eg: with SSMS), or, through the Admin UI itself:
+    1. http://knowledgebase.znode.com/v9-3-1/index.php/Stores#URL_Tab
+    1. http://knowledgebase.znode.com/v9-3-1/index.php/Global_Settings#URL_Management
+1. Configure the Web.Release.config files with the public URL's.
+1. Re-publish the store so that the media URL's update.
+
+TODO - pic of webstore on public url
