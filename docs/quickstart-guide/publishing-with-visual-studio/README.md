@@ -103,15 +103,28 @@ Repeat the same process of creating a site, but for the Admin UI.
 
 ## Define WebStore UI Config Transforms
 
+With the API and Admin UI running, the next step is to repeat the same process to configure (and build and deploy) the WebStore UI.
+
+The WebStore UI's Web.Release.config should be configured with any overrides applicable to the server environment. In this example, no overrides should be applied.
+
+![img](_assets/0600_webstore_config.png)
+
 ## Publish the WebStore UI
+
+Repeat the same publish process, but for the `Znode.Engine.WebStore` project.
 
 ## Create the WebStore UI IIS Site
 
+Repeat the same process of creating a site, but for the WebStore UI.
+
+![img](_assets/0650_webstore_create_iis_site.png)
+
 ## Confirm the WebStore UI IIS Site Runs
+
+![img](_assets/0700_webstore_tab.png)
 
 ## Configure External (non-localhost) URL's
 
 1. Go into Admin UI on server, add URL.
 1. Paste same URL's into config files.
 1. Re-publish.
-
