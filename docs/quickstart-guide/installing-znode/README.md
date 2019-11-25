@@ -64,11 +64,23 @@ Before exploring Znode in-depth, the following points should be known.
 ### Logging in to the Admin UI
 The Admin UI (running on http://localhost:6766 by default) requires credentials to log in. The default `username` and `password` are `admin@znode.com` and `admin12345`, respectively.
 
-### Publishing the Default WebStore Dataset
-On a fresh install, the WebStore (running on http://localhost:3288 by default) will be empty. To populate the store with the default dataset:
+### Publishing the WebStore
+
+On a fresh install, the WebStore (running on `http://localhost:3288` by default) will present a message saying:
+
+```
+This store has not been published yet.
+```
+
+This is because the store has not been published yet ([documementation on publishing](http://knowledgebase.znode.com/v9-3-1/index.php/Publish) available in Knownledge Base). To publish the store:
+
 1. Visit the stores page on the Admin UI (http://localhost:6766/Store/List).
-1. Click the globe icon on the Fine Foods row. This will publish the Fine Foods sample content and products.
-1. Refresh the WebStore. The WebStore should render with the default theme and the sample Fine Foods content.
+1. Click the globe icon on the `DemoStore` row. This will publish the Demo Store.
+1. Refresh the WebStore (the `localhost:3288` tab). The WebStore should now render with the default theme. There will still be no products or content because the default DB has no sample data.
+
+![empty default store](_assets/empty-published-store.png)
+
+*Note: Sample data used to be included in the default DB, but starting with Znode v9.3.1, the default DB is empty.*
 
 ### Troubleshooting Common Problems
 
