@@ -1,6 +1,8 @@
 # Publishing with Visual Studio (Optional)
 
-Visual Studio has a built in `Publish` functionality to help build, and optionally, deploy the application to a site on an IIS server. This document is not meant to teach how the Publish funtionality itself works, but rather, show how Znode can be published to folders, ZIP-ed, copied to a server, and un-ZIP-ed to IIS sites at a high level. A better long term solution would be to publish directly to a remote IIS server, or, setup a full CI/CD pipeline.
+Visual Studio has a built in `Publish` feature to help build, and optionally, deploy the application to sites on an IIS server. This document is not meant to teach how the Publish funtionality itself works, but rather, show an example of how Znode can be published to folders, ZIP-ed, copied to a server, and un-ZIP-ed to IIS sites at a high level.
+
+A more ideal long term solution would be to publish directly to a remote IIS server, or, setup a full CI/CD pipeline, but that is outside the scope of this document.
 
 As mentioned, general .NET training is not within the scope of the Znode Docs. To learn more about Visual Studio's Publish feature in general, their [Publish Tutorial](https://docs.microsoft.com/en-us/visualstudio/deployment/tutorial-import-publish-settings-iis?view=vs-2019) may be a good place to start.
 
@@ -127,12 +129,16 @@ Repeat the same process of creating a site, but for the WebStore UI.
 
 To expose the Znode install on external/public URL's:
 
-1. Create the CNAME/A records with the domain registrar (eg: AWS, GoDaddy, etc.).
-1. Configure Znode's DB with the URL domains.
-  1. The `ZnodeDomain` table needs to have entries for each URL that the API, Admin, and WebStore are to be hosted on. These entries can be directly edited (eg: with SSMS), or, through the Admin UI itself:
-    1. http://knowledgebase.znode.com/v9-3-1/index.php/Stores#URL_Tab
-    1. http://knowledgebase.znode.com/v9-3-1/index.php/Global_Settings#URL_Management
-1. Configure the Web.Release.config files with the public URL's.
-1. Re-publish the store so that the media URL's update.
+1. Create the CNAME/A records with the domain registrar (eg: AWS, GoDaddy, etc.). Eg:
+1. Add the appropriate IIS binding for each of the sites. This example leaves the localhost bindings in place so that the apps can communicate internally over localhost. Examples of public URL's:
+   1. admin.b2b931.amlamarket.com
+   1. api.b2b931.amlamarket.com
+   1. webstore.b2b931.amlamarket.com
+1. Configure Znode's DB with the new URL's.
+   1. The `ZnodeDomain` table needs to have entries for each URL that the API, Admin, and WebStore are to be hosted on. These entries can be directly edited (eg: with SSMS), or, through the Admin UI itself:
+      1. http://knowledgebase.znode.com/v9-3-1/index.php/Stores#URL_Tab
+      1. http://knowledgebase.znode.com/v9-3-1/index.php/Global_Settings#URL_Management
 
-TODO - pic of webstore on public url
+Once this is completed, the WebStore will be reachable over the public URL:
+
+![img](_assets/0900_webstore_public_url.png)
