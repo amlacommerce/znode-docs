@@ -81,11 +81,25 @@ Now that the API site is created, open `localhost:44762` in a browser to confirm
 
 ## Define Admin UI Config Transforms
 
+With the API running, the next step is to repeat the same process to configure (and build and deploy) the Admin UI.
+
+The Admin UI's Web.Release.config should be configured with any overrides applicable to the server environment. In this example, no overrides should be applied.
+
+![img](_assets/0300_admin_config.png)
+
 ## Publish the Znode Admin UI
+
+Repeat the same publish process, but for the `Znode.Engine.Admin` project.
 
 ## Create the Znode Admin UI IIS Site
 
+Repeat the same process of creating a site, but for the Admin UI.
+
+![img](_assets/0350_admin_create_iis_site.png)
+
 ## Confirm the Admin UI IIS Site Runs
+
+![img](_assets/0400_admin_tab.png)
 
 ## Define WebStore UI Config Transforms
 
@@ -100,3 +114,4 @@ Now that the API site is created, open `localhost:44762` in a browser to confirm
 1. Go into Admin UI on server, add URL.
 1. Paste same URL's into config files.
 1. Re-publish.
+
