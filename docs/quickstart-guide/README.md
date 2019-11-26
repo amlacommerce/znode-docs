@@ -9,5 +9,5 @@ These quickstart instructions are organized into two separate guides:
 **Guide II: [Installing Znode](installing-znode/README.md)**
 <br>Instructions to install Znode on a machine that already has Znode's dependencies installed.
 
-**Guide III: [OPTIONAL: Publishing Znode to a Server with Visual Studio](publishing-with-visual-studio/README.md)**
+**Guide III: [Publishing Znode to a Server with Visual Studio (Optional)](publishing-with-visual-studio/README.md)**
 <br>An optional simple example of publishing the Znode sites to a server.
