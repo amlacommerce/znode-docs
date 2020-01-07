@@ -93,3 +93,10 @@ Congratulations if you have successfully made it this far!
 It is important to note that these instructions walk through the process of building and running the [Znode SDK](https://github.com/amlacommerce/znode) repository. There is also a [Znode Source Code](https://github.com/amlacommerce/znode-source) repository available. Read the [SDK vs. Full Source Development](/docs/sdk-vs-full-source/README.md) documentation to understand the purpose of the two respositories.
 
 Review other parts of this [documentation](/README.md) for more in-depth information where desired.
+
+#### Sample Data Sets
+
+Sample media for a B2B and B2C data set are available in the ZIP files at the following links.
+
+* [B2B (Hardware) Media](https://drive.google.com/open?id=1erTexThkSNhD5OUQyAHbXVfsH4XpwAB1)
+* [B2C (Fine Foods) Media](https://drive.google.com/open?id=1a1HoPJ2fwtMt6sfNTmw_y-wcynkUXfPv)
