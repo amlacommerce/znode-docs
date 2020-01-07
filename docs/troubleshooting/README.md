@@ -30,6 +30,18 @@ However, there may be no useful error presented. To check if this problem is the
 
 **Bottom line:** This error can be safely ignored if not interested in Znode's deprecated SSRS reports.
 
+## Publish Fails with "Failed to create job"
+
+**Problem:** When publishing the store, the publish fails with an error message saying "Failed to create job".
+
+![failed to create job](_assets/failed-to-create-job.png)
+
+**Solution:** Make sure the SQL Server Agent is running.
+
+![ssms](_assets/ssms-object-explorer.png)
+
+![services](_assets/services.png)
+
 ## Miscellaneous Visual Studio Build Errors
 
 **Problem:** Visual Studio is failing to build Znode, and there are no code changes that cause breakage.
