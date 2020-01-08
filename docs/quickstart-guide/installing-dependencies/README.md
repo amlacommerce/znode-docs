@@ -8,8 +8,8 @@ This quickstart guide provides instructions on installing Znode's dependencies t
 Znode depends on the following software to properly run:
 - .NET Ecosystem:
     - Visual Studio 2017 (or later)
-    - IIS (or IIS Express with VS)
-    - Microsoft SQL Server
+    - IIS 7.5 or Later (or IIS Express with VS)
+    - Microsoft SQL Server 2012 or Later
 - Non-.NET Ecosystem:
     - Java Development Kit (JDK)
     - Elasticsearch v5.5
