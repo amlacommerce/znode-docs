@@ -19,8 +19,13 @@ To create a new custom theme, use the default theme as a starting point.
 
 Many Znode styles are written in SASS to allow global variable definitions to be shared and leverage other features of SASS. The broswer only understands CSS though, so the Visual Studio solution must be configured to transpile *.scss files to *.css files.
 
+OPTIONAL PART: Visual Studio may or may not have a built-in ability to transpile *.scss to *.css files, depending on the installation. If needed, the following compiler plugin can be used.
+
 1. Install the [Visual Studio Web Compiler Plugin](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebCompiler) if not already done.
 1. In Visual Studio, right click on the [compilerconfig.json](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Engine.WebStore/compilerconfig.json) file and go to the “Web Compiler” submenu, check the “Enable Compile on Build…” option.
+
+MANDATORY PART: Visual Studio must be told which file is the root file from which to build the tree of files to transpile.
+
 1. Edit the [compilerconfig.json](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Engine.WebStore/compilerconfig.json) file to tell the plugin how to transpile *.scss syles to *.css styles.
 1. Replace '`Default`' with the custom theme's folder name.
 
