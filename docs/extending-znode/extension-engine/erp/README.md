@@ -50,6 +50,7 @@ To create a custom ERP Connector, use the sample MockERPConnector as a starting 
 With the new ERP Connector enabled, it is time to create a touch point that will hold the custom logic.
 
 1. In the new connector's [*Connector.cs](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Libraries/Znode.Engine.ERPConnector/MockERPConnector/ZnodeMockERPConnector.cs) file, add a public method with any desired logic.
+1. Build and restart the application.
 1. In the Admin UI, navigate to `Admin` > `ERP Configuration` > `* TOUCH POINT LIST`.
 1. Page will reload. No records are shown.
 1. Click `Add New` to select a touch point to enable.
