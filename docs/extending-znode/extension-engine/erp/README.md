@@ -43,7 +43,7 @@ To create a custom ERP Connector, use the sample MockERPConnector as a starting 
 1. Navigate to the Admin in a browser tab (http://localhost:6766 by default).
 1. Under the `Dev Center` module, select the `Extension` engine. Click on extension engine drop-down for `ERP Connector`.
 1. On the `ERP Connector` page, select  the new connector as the ERP Package.
-1. Fill in details for the new ERP Connector and click `Save`. Make sure the new ERP Package is set as “Enabled”.
+1. Fill in details for the new ERP Connector, make sure the new ERP Package has its status set to “Activate”, and click `Save`.
 
 ### Create Touch Point
 
