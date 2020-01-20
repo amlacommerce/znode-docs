@@ -32,7 +32,7 @@ The below instructions walk through the process of creating a custom ERP connect
 
 To create a custom ERP Connector, use the sample MockERPConnector as a starting point.
 
-1. Copy the [MockERPConnector](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Projects/Libraries/Znode.Engine.ERPConnector/MockERPConnector) as a starting point.
+1. Copy the [MockERPConnector](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Projects/Libraries/Znode.Engine.ERPConnector/MockERPConnector) of the Znode.Engine.ERPConnector project as a starting point.
 1. Rename the folder to the desired name.
 1. Include the new connector it in the Visual Studio project.
 1. Rename the .cs class files (and the class names).
