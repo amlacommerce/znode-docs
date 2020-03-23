@@ -34,7 +34,7 @@ Follow these steps to install the JDK. Znode uses Elasticsearch v5.5, so any JDK
 Elasticsearch also assumes that a Windows Environment Variable will point to the JDK install path. To set this, follow these steps:
 1. Open a command prompt as an administrator.
 1. Run `setx -m JAVA_HOME "C:\Program Files\Java\jdk1.8.0_102"` at the command prompt. Update the path to match that of the local JDK installation if necessary.
-1. The variable can be verified by running `echo %JAVA_HOME%`.
+1. The variable can be verified by restarting the command prompt and running `echo %JAVA_HOME%`.
 
 ## Part 2: Installing Elasticsearch
 Follow these steps to install Elasticsearch. Znode officially supports Elasticsearch v5.5, but other versions may also work.
