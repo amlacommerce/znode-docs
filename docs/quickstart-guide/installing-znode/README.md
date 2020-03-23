@@ -10,7 +10,7 @@ These instructions help with Znode setup from start to finish. The instructions 
 It is assumed that Znode's dependencies are already installed. If that's not the case, start by [Installing Znode Dependencies](../installing-dependencies/README.md) first.
 
 ## Part 1: Getting the Znode Code
-It is assumed that [Git](https://git-scm.com/) is already installed. See Git's [official installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if necessary.
+It is also assumed that [Git](https://git-scm.com/) is already installed. If that's not the case, see Git's [official installation guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and install it.
 
 Run the `clone` command at a Git Bash window:
 
