@@ -10,7 +10,7 @@ The following steps walk through the process of creating a new custom theme.
 
 To create a new custom theme, use the default theme as a starting point.
 
-1. Make a copy of the [default theme](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Projects/Znode.Engine.WebStore/Views/Themes/Default) in the '[Views/Themes](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Projects/Znode.Engine.WebStore/Views/Themes)' folder. Name the copied folder to the desired custom theme name. The name `NewTheme` is used as an example throughout these instructions.
+1. Make a copy of the [default theme](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Projects/Znode.Engine.WebStore/Views/Themes/Default) (or [B2B theme](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Projects/Znode.Engine.WebStore/Views/Themes/B2B)) in the '[Views/Themes](https://github.com/amlacommerce/znode/tree/master/ZnodeMultifront/Projects/Znode.Engine.WebStore/Views/Themes)' folder. Name the copied folder to the desired custom theme name. The name `NewTheme` is used as an example throughout these instructions.
 1. **Important:** Commit the new theme to source control. Immediately committing to source control ensures a full history of theme customizations are captured in source control.
 1. In Visual Studio, add the custom theme to the project so that it appears in the IDE.
 
