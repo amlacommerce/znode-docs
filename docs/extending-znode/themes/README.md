@@ -59,10 +59,10 @@ Before enabling the new theme, it must be "registered" in Znode's Admin UI.
 
 Once the theme is "registered" in the Admin UI, it can be enabled for a store.
 
-1. In the Admin UI, go to `Stores & Reps` > `Stores`.
+1. In the Admin UI, go to `CMS` > `Store Experience`.
 1. Select your store from the list of stores.
-1. Choose `NewTheme` to be the theme associated with the store, and choose the first `site.css` option to be the active CSS file.
-1. Publish the store by clicking the globe icon next to the store on the `Stores & Reps` > `Stores` page. This moves the state from the SQL database to the MongoDB database, which means the new theme will become active in the WebStore.
+1. On the `General Settings` tab, for `Theme` choose `NewTheme` to be the theme associated with the store, and choose the first `site.css` option to be the active CSS file.
+1. Publish the store by clicking the globe icon next to the store on the `CMS` > `Store Experience` page. This moves the state from the SQL database to the MongoDB database, which means the new theme will become active in the WebStore.
 1. Load the WebStore (http://localhost:3288 by default) in a browser tab to verify everything is working.
 
 ### Step 5: Edit New Theme
