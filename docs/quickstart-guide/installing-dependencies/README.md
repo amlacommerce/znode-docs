@@ -23,7 +23,7 @@ It is assumed that a proper .NET development environment is already setup. For t
 Installers for these dependencies can be retrieved directly from the vendors, or, easily downloaded in this [Setup Files ZIP](https://drive.google.com/file/d/17eZQCL2Ggaf-MY7j-uy1Cfxqmys38BKF/view?usp=sharing).
 
 ## Part 1: Installing Java Development Kit (JDK)
-To run Znode, a recent version of the JDK must be installed. Note that Znode itself does not depend on Java, but Znode depends on Elasticsearch, which depends on Java.
+To run Znode, the JDK must be installed. Note that Znode itself does not depend on Java, but Znode depends on Elasticsearch, which depends on Java.
 
 ### Install JDK
 Follow these steps to install the JDK. Znode uses Elasticsearch v7.6, so any JDK that is compatible with Elasticsearch v7.6 will work. In-house Znode developers run JDK v1.8.0.
