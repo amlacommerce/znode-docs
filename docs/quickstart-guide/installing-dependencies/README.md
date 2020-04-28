@@ -10,7 +10,7 @@ Znode depends on the following software to properly run. Other versions may work
     - .NET Framework 4.8
     - Visual Studio 2017
     - IIS 7.5 or Later (or IIS Express with VS)
-    - Microsoft SQL Server 2016 or Later
+    - Microsoft SQL Server 2016 or Later (Standard Edition at least)
 - Non-.NET Ecosystem:
     - Java Development Kit (JDK) 11.0
     - Elasticsearch 7.6
