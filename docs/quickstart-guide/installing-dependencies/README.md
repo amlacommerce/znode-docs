@@ -13,7 +13,7 @@ Znode depends on the following software to properly run. Other versions may work
     - Microsoft SQL Server 2016 or Later (Standard Edition at least)
 - Non-.NET Ecosystem:
     - Java Development Kit (JDK) 11.0
-    - Elasticsearch 7.6
+    - Elasticsearch 7.6.0
     - MongoDB 4.2
 
 It is assumed that a proper .NET development environment is already setup. For that reason, Visual Studio, IIS, and SQL Server installation help is not provided in this guide. This guide covers installation of the JDK, Elasticsearch, and MongoDB.
@@ -26,7 +26,7 @@ Installers for these dependencies can be retrieved directly from the vendors, or
 To run Znode, the JDK must be installed. Note that Znode itself does not depend on Java, but Znode depends on Elasticsearch, which depends on Java.
 
 ### Install JDK
-Follow these steps to install the JDK. Znode uses Elasticsearch v7.6, so any JDK that is compatible with Elasticsearch v7.6 will work. In-house Znode developers run JDK v1.8.0.
+Follow these steps to install the JDK. Znode uses Elasticsearch v7.6.0, so any JDK that is compatible with Elasticsearch v7.6.0 will work. In-house Znode developers run JDK v1.8.0.
 1. Acquire a copy of the JDK. A copy is provided in the `Setup Files ZIP` (`jdk-11.0.6_windows-x64_bin.exe`).
 1. Run the JDK installer.
 1. Follow the steps built in to the installer.
@@ -38,7 +38,7 @@ Elasticsearch also assumes that a Windows Environment Variable will point to the
 1. The variable can be verified by restarting the command prompt and running `echo %JAVA_HOME%`.
 
 ## Part 2: Installing Elasticsearch
-Follow these steps to install Elasticsearch. Znode officially supports Elasticsearch v7.6, but other versions may also work.
+Follow these steps to install Elasticsearch. Znode officially supports Elasticsearch v7.6.0, but other versions may also work.
 1. Acquire a copy of Elasticsearch. A copy is provided in the `Setup Files ZIP` (`elasticsearch-7.6.0`). Alternatively, Elastic has it available [here](https://www.elastic.co/downloads/past-releases/elasticsearch-7-6-0).
 1. Copy the `elasticsearch-7.6.0` folder to the root of the `C:` drive, or another desired location.
 1. Open a command prompt as an administrator and execute the following commands to install the Elasticsearch Windows Service and run it in the background:
