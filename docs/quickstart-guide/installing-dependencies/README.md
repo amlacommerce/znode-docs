@@ -49,9 +49,11 @@ Follow these steps to install Elasticsearch. Znode officially supports Elasticse
 ## Part 3: Installing MongoDB
 Follow these steps to install MongoDB. Znode officially supports MongoDB v4.2, but other versions may also work.
 1. Acquire a copy of MongoDB v4.2. A copy is provided in the `Setup Files ZIP` (`mongodb-win32-x86_64-2012plus-4.2.3-signed`).
-1. Run the MongoDB installer. Choose the "Complete" option during installation.
-1. On the next page, the “Install MongoDB Compass” option can be deleselected because it is not needed.
-1. On a later page, accept the default options related to installing MongoDB to run as a service.
+1. Run the MongoDB installer. Choose the `Complete` option.
+1. On the next page, keep the default options of `Install MongoD as a Service` and `Run service as Network Service user`. Click `Next`.
+1. The `Install MongoDB Compass` option can be deleselected because it is not needed. Click `Next`.
+1. Click `Install`. Wait while the installation is performed.
+1. Click `Finish` to acknowledge completion of the installation.
 
 ## Next Steps
 Continue on to [Installing Znode](../installing-znode/README.md).
