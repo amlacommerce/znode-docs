@@ -26,7 +26,7 @@ Installers for these dependencies can be retrieved directly from the vendors, or
 To run Znode, the JDK must be installed. Note that Znode itself does not depend on Java, but Znode depends on Elasticsearch, which depends on Java.
 
 ### Install JDK
-Follow these steps to install the JDK. Znode uses Elasticsearch v7.6.0, so any JDK that is compatible with Elasticsearch v7.6.0 will work. In-house Znode developers run JDK v1.8.0.
+Follow these steps to install the JDK. Znode uses Elasticsearch v7.6.0, so any JDK that is compatible with Elasticsearch v7.6.0 will work. Amla's Znode developers run JDK v11.0.6; this version is known to be fully compatible and recommended.
 1. Acquire a copy of the JDK. A copy is provided in the `Setup Files ZIP` (`jdk-11.0.6_windows-x64_bin.exe`).
 1. Run the JDK installer.
 1. Follow the steps built in to the installer.
