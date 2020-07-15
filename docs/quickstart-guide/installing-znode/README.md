@@ -40,7 +40,7 @@ Znode uses TypeScript and SASS to files for much of the source code. The broswer
 
 ## Part 4: Configuring NuGet
 To successfully build Znode, it is necessary to configure NuGet to access the private Znode NuGet Registry.
-1. NuGet credentials have most likely already been provided. If unsure, please search for an email with text "NuGet". If you have in fact not yet receieved such credentials, then please request access to the Znode NuGet Registry by emailing support@znode.com.
+1. NuGet credentials have most likely already been provided to you, especially if you are attending a schedule Znode training session. If you unsure whterh you have received these credentials, please search for an email with text "NuGet". If you have in fact not yet receieved such credentials, then please request access to the Znode NuGet Registry by emailing support@znode.com.
 1. Add a custom NuGet package source in Visual Studio. Microsoft's instructions for doing so are [here](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources).
     1. The `Source` that needs to be entered into Visual Studio is: http://nuget.znode.com/nuget.
     1. The `Username` and `Password` that needs to be entered into Visual Studio is that which the Znode team provided.
