@@ -29,11 +29,11 @@ However, there may be no useful error presented. To check if this problem is the
 
 **Bottom line:** This error can be safely ignored if not interested in Znode's deprecated SSRS reports.
 
-## TypeScript Compilation Errors
+## TypeScript Compiler (TSC) Errors
 
-**Problem:** When opening the Znode solution with Visual Studio (likely 2019), complilation error(s) fail the build. Znode's internal developers still use Visual Studio 2017 and it has been noted that Visual Studio 2019's TS compiler is more strict in some places.
+**Possible Problem A:** When building the Znode solution with Visual Studio (likely 2019), complilation error(s) cause the build to fail.
 
-**Solution:** Add a `// @ts-ignore` comment on the line immediately above the line that is failing.
+**Solution:** Znode's internal developers still use Visual Studio 2017 and it has been noted that Visual Studio 2019's TS compiler is more strict in some places, reporting a possible error when the code is actually fine. To relax the compiler, place a `// @ts-ignore` comment on the line immediately above the line that is failing.
 
 For example:
 
@@ -42,6 +42,14 @@ let value = 0;
 // @ts-ignore
 value = getMyValue(); // (this line is ignored by the compiler)
 ```
+
+**Possible Problem B:** When building the Znode solution with Visual Studio, TypeScript errors occur. This problem sometimes occurs in the Admin UI and WebStore applications but is inconsistent.
+
+**Possible Solutions:** Possible solutions include:
+
+* Restart Visual Studio and/or Windows itself.
+* Upgrade the version of TypeScript used in the Admin UI and WebStore projects.
+  * For the `Znode.Engine.Admin` and `Znode.Engine.WebStore` projects, in Visual Studio, right click on the project, go to `Properties` > `TypeScript Build` tab, then in the `TypeScript version` field choose a later (or latest) version. Try building again, possibly restarting Visual Studio and/or Windows if necessary.
 
 ## Publish Fails with "Failed to create job"
 
@@ -65,16 +73,6 @@ value = getMyValue(); // (this line is ignored by the compiler)
 * Try a full clean/rebuild.
 * Try restarting Visual Studio.
 * Try restarting the computer entirely (sometimes Visual Studio and/or MSBuild can leave behind corrupted processes that need to be restarted).
-
-## TypeScript Compiler (TSC) Error
-
-**Problem:** When building the Znode solution with Visual Studio, TypeScript errors occur. This problem sometimes occurs in the Admin UI and WebStore applications but is inconsistent.
-
-**Possible Solutions:** Possible solutions include:
-
-* Restart Visual Studio and/or Windows itself.
-* Upgrade the version of TypeScript used in the Admin UI and WebStore projects.
-  * For the `Znode.Engine.Admin` and `Znode.Engine.WebStore` projects, in Visual Studio, right click on the project, go to `Properties` > `TypeScript Build` tab, then in the `TypeScript version` field choose a later (or latest) version. Try building again, possibly restarting Visual Studio and/or Windows if necessary.
 
 ## Failed to Publish Error
 
