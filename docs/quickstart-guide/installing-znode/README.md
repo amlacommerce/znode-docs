@@ -53,7 +53,7 @@ With Znode's dependencies installed and NuGet configured, it is now time to run 
     - Znode.Engine.API
     - Znode.Engine.WebStore
 1. Build the solution.
-1. Configure SQL connection strings in the API's [Web.config](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Engine.Api/Web.config). The `ZnodeECommerceDB` and `Znode_Entities` strings need to be configured. For both settings, set:
+1. Configure SQL connection strings in the API's [Web.config](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Engine.Api/Web.config). The `ZnodeECommerceDB`, `Znode_Entities` and `ZnodePublish_Entities` strings need to be configured. For each, set:
     1. `Data Source`, `User Id`, and `Password` to that which is used to connect with SSMS (or as desired).
     1. `Initial Catalog` to the name of the Znode DB. The default is `Znode_Multifront_{VERSION}` where `{VERSION}` is replaced with the version number.
 1. Run the solution. Visual Studio should automatically open the 3 applications in the default browser.
@@ -62,7 +62,7 @@ With Znode's dependencies installed and NuGet configured, it is now time to run 
 Before exploring Znode in-depth, the following points should be known.
 
 ### Logging in to the Admin UI
-The Admin UI (running on http://localhost:6766 by default) requires credentials to log in. The default `username` and `password` are `admin@znode.com` and `admin12345`, respectively.
+The Admin UI (running on http://localhost:6766 by default) requires credentials to log in. The default `username` and `password` are `master-user@znode.com` and `Z14ode_13E`, respectively.
 
 ### Publishing the WebStore
 

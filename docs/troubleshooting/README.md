@@ -29,6 +29,20 @@ However, there may be no useful error presented. To check if this problem is the
 
 **Bottom line:** This error can be safely ignored if not interested in Znode's deprecated SSRS reports.
 
+## TypeScript Compilation Errors
+
+**Problem:** When opening the Znode solution with Visual Studio (likely 2019), complilation error(s) fail the build. Znode's internal developers still use Visual Studio 2017 and it has been noted that Visual Studio 2019's TS compiler is more strict in some places.
+
+**Solution:** Add a `// @ts-ignore` comment on the line immediately above the line that is failing.
+
+For example:
+
+```
+let value = 0;
+// @ts-ignore
+value = getMyValue(); // (this line is ignored by the compiler)
+```
+
 ## Publish Fails with "Failed to create job"
 
 **Problem:** When publishing the store, the publish fails with an error message saying "Failed to create job".
