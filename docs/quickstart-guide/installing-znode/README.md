@@ -102,6 +102,8 @@ Sample media for a B2B and B2C data set are available in the ZIP files at the fo
 * [B2C (Fine Foods) Media](https://drive.google.com/open?id=1a1HoPJ2fwtMt6sfNTmw_y-wcynkUXfPv)
 
 Once downloaded and unzipped, copy the media folder to the current directory your Znode install is located
+
 _ie \znode\ZnodeMultifront\Projects\Znode.Engine.Api\Data_
+
 Merge the unzipped 'media' folder with the api's 'media' folder, or replace the folder. The existing path structure must be maintained.
 Please see the the following documentation for [Configuring Image Settings](https://support.znode.com/support/solutions/articles/43000596592-managing-media-settings#Configuring-Image-Settings)
