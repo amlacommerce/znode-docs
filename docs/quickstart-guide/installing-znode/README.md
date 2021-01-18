@@ -53,7 +53,7 @@ With Znode's dependencies installed and NuGet configured, it is now time to run 
     - Znode.Engine.API
     - Znode.Engine.WebStore
 1. Build the solution.
-1. Configure SQL connection strings in the API's [Web.config](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Engine.Api/Web.config). The `ZnodeECommerceDB`, `Znode_Entities` and `ZnodePublish_Entities` strings need to be configured. For each, set:
+1. Configure SQL connection strings in the API's [Web.config](https://github.com/amlacommerce/znode/blob/master/ZnodeMultifront/Projects/Znode.Engine.Api/Web.config). The connection string must specify a DB user that is the owner of the Znode DB and has EXECUTE permissions on the msdb in SQL (you can use the default `sa` user if desired). The `ZnodeECommerceDB`, `Znode_Entities` and `ZnodePublish_Entities` strings need to be configured. For each, set:
     1. `Data Source`, `User Id`, and `Password` to that which is used to connect with SSMS (or as desired).
     1. `Initial Catalog` to the name of the Znode DB. The default is `Znode_Multifront_{VERSION}` where `{VERSION}` is replaced with the version number.
 1. Run the solution. Visual Studio should automatically open the 3 applications in the default browser.
